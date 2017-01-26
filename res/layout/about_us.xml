@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#C16CE6">
+    
+    <TextView
+        android:text="About BRTS"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"/>
+    
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/ly1" 
+        android:layout_marginTop="10dp"
+        android:background="#FFB6C1">
+        
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="BRTS Website"
+            android:id="@+id/btnBRTS"
+            android:background="#66CDAA"/>
+        
+         </RelativeLayout>
+     
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Legal Information"
+        android:layout_marginTop="10dp"/>
+    
+	<RelativeLayout
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:id="@+id/ly2"
+	    android:layout_marginTop="10dp"
+	    android:background="#D3D3D3">
+	    
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Rules of Life-Time Janmarg Travel Card" 
+	        android:id="@+id/btnRules"
+	        android:background="#66CDAA"/>
+	    
+	    <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Student Smart Card"
+            android:id="@+id/btnCard"
+            android:layout_below="@+id/btnRules"
+            android:background="#66CDAA"
+            android:layout_marginTop="10dp"/>
+	    
+	    <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Luggage Policy"
+            android:id="@+id/btnPolicy"
+            android:layout_below="@+id/btnCard"
+            android:background="#66CDAA"
+            android:layout_marginTop="10dp"/>
+	    
+	    <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Janmarg Token Details"
+            android:id="@+id/btnToken"
+            android:layout_below="@+id/btnPolicy"
+            android:background="#66CDAA"
+            android:layout_marginTop="10dp"/>
+	    
+	</RelativeLayout>
+	
+	<TextView
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:text="About Us"
+	    android:layout_marginTop="10dp"/>
+	
+	<RelativeLayout
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:id="@+id/ly3"
+	    android:layout_marginTop="10dp"
+	    android:background="#FFB6C1">
+	    
+	    <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Like us on FACEBOOK"
+            android:id="@+id/btnFB"
+            android:background="#66CDAA"/>
+	 
+	</RelativeLayout>
+</LinearLayout>

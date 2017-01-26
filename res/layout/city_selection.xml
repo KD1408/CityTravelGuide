@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+    
+<FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+    
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:textSize="100dp"
+        android:gravity="center"
+        android:text="CTG"
+        android:id="@+id/tvFont"/>
+    
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:text="Ahmedabad"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.8"
+        android:layout_marginTop="147dp"
+        android:id="@+id/btnAhm"/>
+    
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:text="Vadodara"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/btnAhm"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.8"
+        android:id="@+id/btnVdr"/>
+
+</RelativeLayout>
+</FrameLayout>
+
+<ListView
+    android:id="@+id/lvDrawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:choiceMode="singleChoice"
+    android:background="#333" 
+    android:divider="#666"
+    android:dividerHeight="2dp"
+    android:paddingLeft="15sp"
+    android:paddingRight="15sp"/>
+
+</android.support.v4.widget.DrawerLayout>

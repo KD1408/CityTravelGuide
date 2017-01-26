@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+    
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:textSize="100dp"
+        android:gravity="center"
+        android:text="CTG"
+        android:id="@+id/tvFont"/>
+    
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        
+        <AutoCompleteTextView
+            android:layout_height="wrap_content"
+            android:layout_width="220dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="55dp"
+            android:hint="Your Location is.."
+            android:singleLine="true"
+            android:gravity="center"
+            android:id="@+id/tvASrc"/>
+        
+        <AutoCompleteTextView
+            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:id="@+id/actvADest"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="55dp"
+            android:layout_below="@+id/tvASrc"/>
+	        
+	    <Button
+	        android:layout_height="wrap_content"
+	        android:layout_width="220dp"
+	        android:text="Search"
+	        android:layout_centerHorizontal="true"
+	        android:alpha="0.8"
+	        android:layout_marginTop="100dp"
+	        android:layout_below="@+id/actvADest"
+	        android:id="@+id/btnASrch"/>
+
+	    <ImageButton
+	        android:id="@+id/imgbtnADest"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignBottom="@+id/actvADest"
+	        android:layout_toLeftOf="@+id/btnASrch"
+	        android:background="@android:drawable/ic_btn_speak_now" />
+	    
+	    <ListView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/lvVcAResult"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/btnASrch"/>
+
+	    <Spinner
+	        android:id="@+id/spnADest"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignBottom="@+id/actvADest"
+	        android:layout_alignRight="@+id/tvASrc" />
+    
+   </RelativeLayout>
+</FrameLayout>

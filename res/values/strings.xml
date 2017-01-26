@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">CTG_Final</string>
+    <string-array name="slider_items">
+        <item>City Travel Guide</item>
+        <item>Sychronize</item>
+        <item>Subscribe</item>
+        <item>About us</item>
+        <item>How to use?</item>
+    </string-array>
+
+</resources>

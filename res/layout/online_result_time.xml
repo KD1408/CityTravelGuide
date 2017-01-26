@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#00BFFF">
+    
+<TextView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="Bus Number"
+    android:background="#ADFF2F"
+    android:id="@+id/tvBusNumber"/>
+
+<TextView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    android:text="Time"
+    android:background="#ADFF2F"
+    android:id="@+id/tvBusTime"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvMainSource"
+    android:layout_marginTop="20dp"
+    android:background="#FFD700"
+    android:text="Source"/>
+
+<TextView
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvMainDistance"
+    android:layout_gravity="right"
+    android:gravity="center"
+    android:background="#FFD700"
+    android:text="Distance"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvMainDest"
+    android:background="#FFD700"
+    android:text="Destination"/>
+
+<ListView 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/lstOnlineBusResult"
+        android:layout_alignParentBottom="true"
+        android:background="#D3D3D3"/>
+</LinearLayout>

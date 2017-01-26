@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BFFF">
+    <LinearLayout
+        android:layout_height="80dp"
+        android:layout_width="160dp"
+        android:background="#FFD700"
+        android:id="@+id/ly1">
+        
+    <TextView 
+        android:text="FROM"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:id="@+id/tvFrm"/>
+    
+    <TextView 
+        android:text="Source"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="18dp"
+        android:id="@+id/tvSrc"
+        android:singleLine="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tvFrm"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_height="80dp"
+        android:layout_width="160dp"
+        android:background="#FFD700"
+        android:id="@+id/ly2"
+        android:layout_below="@+id/ly1"
+        android:layout_marginTop="20dp">
+    
+    <TextView 
+        android:text="TO"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:id="@+id/tvTo"/>
+    
+    <TextView 
+        android:text="Destination"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="18dp"
+        android:id="@+id/tvDest"
+        android:singleLine="true"
+        android:layout_below="@+id/tvTo"
+        android:layout_marginTop="15dp"/>
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:background="#ADFF2F"
+        android:layout_toRightOf="@+id/ly1"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:id="@+id/ly2">
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Route No"
+            android:id="@+id/tvRtno"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"/>
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tvRoutes"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+        
+    </LinearLayout>
+    
+    <ListView 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="200dp"
+        android:id="@+id/lstStp"
+        android:layout_alignParentBottom="true"
+        android:background="#D3D3D3"/>
+
+</RelativeLayout>

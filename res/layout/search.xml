@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+    
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:textSize="100dp"
+        android:gravity="center"
+        android:text="CTG"
+        android:id="@+id/tvFont"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <AutoCompleteTextView
+            android:id="@+id/actvSrc"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:singleLine="true" >
+
+        </AutoCompleteTextView>
+
+        <Spinner
+            android:id="@+id/spnSrc"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_toRightOf="@+id/actvSrc" />
+
+        <AutoCompleteTextView
+            android:id="@+id/actvDest"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actvSrc"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <Spinner
+            android:id="@+id/spnDest"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/spnSrc"
+            android:layout_marginTop="38dp"
+            android:layout_toRightOf="@+id/actvDest" />
+
+        <Button
+            android:id="@+id/btnSrch"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actvDest"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:alpha="0.8"
+            android:text="Search" />
+
+        <ImageButton
+            android:id="@+id/imgbtnSrc"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/actvDest"
+            android:layout_toLeftOf="@+id/btnSrch"
+            android:background="@android:drawable/ic_btn_speak_now" />
+
+        <ImageButton
+            android:id="@+id/imgbtnDest"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/imgbtnSrc"
+            android:layout_alignTop="@+id/spnDest"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/ic_btn_speak_now" />
+        
+        <ListView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/lvVcResult"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/btnSrch"/>
+    </RelativeLayout>
+
+</FrameLayout>
