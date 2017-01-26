@@ -86,7 +86,7 @@ public class Online_Result_Time extends Activity {
 			// TODO Auto-generated method stub
 			try {
 				String line_no = params[0];
-				String url = "http://ctg.comeze.com/JSONbus_route.php";
+				String url = "http://ctg.krutarthdoshi.com/JSONbus_route.php";
 
 				String params1 = URLEncoder.encode("line", "UTF-8") + "="
 						+ URLEncoder.encode(line_no, "UTF-8");
