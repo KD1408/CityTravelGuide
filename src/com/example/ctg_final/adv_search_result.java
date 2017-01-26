@@ -102,7 +102,7 @@ public class adv_search_result extends Activity {
 			// TODO Auto-generated method stub
 			try {
 				String line_no = params[0];
-				String url = "http://ctg.krutarthdoshi.com//JSONbus_track1.php";
+				String url = "http://ctg.krutarthdoshi.com/JSONbus_track1.php";
 
 				String params1 = URLEncoder.encode("line", "UTF-8") + "="
 						+ URLEncoder.encode(line_no, "UTF-8");
