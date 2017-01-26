@@ -293,7 +293,7 @@ public class Search extends Activity {
 			try {
 				String src = params[0];
 				String dst = params[1];
-				String url = "http://ctg.comeze.com/JSONdaily.php";
+				String url = "http://ctg.krutarthdoshi.com/JSONdaily.php";
 
 				
 				String params1 = URLEncoder.encode("source", "UTF-8") + "="
