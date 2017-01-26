@@ -93,7 +93,7 @@ public class Online_Result extends Activity {
 	
 	class onlineResult extends AsyncTask<String, String, String>
 	{
-		final String url = "http://ctg.comeze.com/JSONdaily1.php";
+		final String url = "http://ctg.krutarthdoshi.com/JSONdaily1.php";
 		String output = "";
 		ProgressDialog pDlg = new ProgressDialog(Online_Result.this);
 
