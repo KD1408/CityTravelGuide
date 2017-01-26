@@ -165,7 +165,7 @@ public class Subscribption extends Activity {
 			{
 				String mob_num = params[0];
 				String emailId = params[1];
-				String url = "http://ctg.krutarthdoshi.com//subscriber.php";
+				String url = "http://ctg.krutarthdoshi.com/subscriber.php";
 				String params1 = URLEncoder.encode("mob", "UTF-8")+"="+URLEncoder.encode(mob_num, "UTF-8")
 						+"&"+URLEncoder.encode("email", "UTF-8")+"="+URLEncoder.encode(emailId, "UTF-8");
 				URL server_location = new URL(url);
